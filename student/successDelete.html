@@ -13,8 +13,8 @@
       <div class="hero-head">
         <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="mainPage_admin.html">
-      <img src="http://bulma.io/images/bulma-type-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+<a class="navbar-item" href="mainPage_student.html">
+	<img src="http://bulma.io/images/bulma-type-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
     </a>
 
     <div class="navbar-burger">
@@ -25,12 +25,20 @@
   </div>
             <div id="navbarMenu" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active" href="mainPage_admin.html">
+                <a class="navbar-item" href="mainPage_student.html">
                   Home
                 </a>
-                
+                <a class="navbar-item" href="courseList.html">
+                  Enroll
+                </a>
+                <a class="navbar-item" href="tuitionlfeePayment.html">
+                  Payment
+                </a>
+				  <a class="navbar-item" href="viewGrade.html">
+                  View grade
+                </a>
                 <span class="navbar-item">
-                  <a class="button is-white is-outlined is-small" href="../login_admin.html">
+                  <a class="button is-white is-outlined is-small" href="../login_student.html">
                     <span>Logout</span>
                   </a>
                 </span>
@@ -45,12 +53,46 @@
 
 
      <section class="container">
-
-
+		 <div class="notification is-success">
+  <button class="delete"></button>
+  Course delete is successful !
+</div>
+     <div class="columns features">
        <div class="column">
-         <h1 class="title is-1">Course list</h1>
-		   
-		   <td><a class="button is-primary is-medium" href="addCourse.html">Add course</a></td><br><br>
+         <div class="card">
+           <div class="card">
+  <div class="card-image">
+    <figure class="image is-1by1">
+      <img src="../pic/profile.jpg" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title">TASANAI PINGMUEANG</p>
+        <p class="subtitle">Collage of art, media and technology<br>
+        582115024</p>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <span>Birthday : 17/06/1995</span><br>
+		<span>Nationality : Thai</span><br>
+		<span>Email : tasanaikq@gmail.com</span><br>
+		<span>Tel. : 0612769747</span><br>
+		
+		<span>Total grade : 2.11</span><br>
+     
+    </div>
+  </div>
+</div>
+         </div>
+       </div>
+
+		
+       <div class="column is-8">
+		   <h1 class="title is-1">Enrolled course</h1>
          <table class="table is-bordered is-hoverable">
     <thead>
       <tr>
@@ -62,8 +104,7 @@
         <th><abbr title="Day">Day</abbr></th>
         <th><abbr title="Time">Time</abbr></th>
         <th><abbr title="Room">Room</abbr></th>
-		  <th><abbr title="Edit">Edit</abbr></th>
-		  <th><abbr title="Delete">Delete</abbr></th>
+        <th><abbr title="Room">Enroll</abbr></th>
 
       </tr>
     </thead>
@@ -79,8 +120,7 @@
         <td>Tu</td>
         <td>12.30-14.30</td>
         <td>CSB202</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
 
       </tr>
       <tr>
@@ -92,8 +132,7 @@
         <td>MTh</td>
         <td>13.00-14.30</td>
         <td>CAMT113</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>3</th>
@@ -104,8 +143,7 @@
         <td>Tu</td>
         <td>9.30-12.30</td>
         <td>CAMT114</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>4</th>
@@ -116,8 +154,7 @@
         <td>Mo</td>
         <td>8.00-9.00</td>
         <td>CAMT218</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>5</th>
@@ -128,8 +165,7 @@
         <td>Fr</td>
         <td>9.30-12.30</td>
         <td>CAMT114</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>6</th>
@@ -140,8 +176,7 @@
         <td>TBA</td>
         <td>0.00-0.00</td>
         <td>TBA</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>7</th>
@@ -152,8 +187,7 @@
         <td>Tu</td>
         <td>14.30-17.30</td>
         <td>CAMT316</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>8</th>
@@ -164,9 +198,7 @@
         <td>th</td>
         <td>9.00-12.00</td>
         <td>CAMT215</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
-
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
 
       <tr>
@@ -178,8 +210,7 @@
         <td>We</td>
         <td>9.00-12.00</td>
         <td>CAMT215</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
       <tr>
         <th>10</th>
@@ -190,8 +221,7 @@
         <td>SaSu</td>
         <td>9.00-16.00</td>
         <td>TBA</td>
-        <td><a class="button is-warning is-focused" href="editCourse.html">Edit</a></td>
-		  <td><a class="button is-danger is-focused" href="successDelete.html">Delete</a></td>
+        <td><a class="button is-danger is-focused" href="successDelete.html">Remove</a></td>
       </tr>
 
     </tbody>
@@ -203,5 +233,7 @@
 
    </section>
 
-</body>
+
+
+  </body>
 </html>
