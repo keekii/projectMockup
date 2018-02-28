@@ -4,44 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
-
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lumen/bulmaswatch.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-
   </head>
   <body>
 
     <section class="hero is-info is-medium is-bold">
       <div class="hero-head">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="index.html">
-      <img src="http://bulma.io/images/bulma-type-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-    </a>
-
-    <div class="navbar-burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="index.html">
+                <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
             <div id="navbarMenu" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active" href="mainPage.html">
+                <a class="navbar-item" href="mainPage.html">
                   Home
                 </a>
-                <a class="navbar-item" href="addCourse.html">
-                  Examples
+                <a class="navbar-item" href="courseList.html">
+                  Enroll
                 </a>
-                <a class="navbar-item">
-                  Documentation
+                <a class="navbar-item" href="tuitionlfeePayment.html">
+                  Payment
+                </a>
+				  <a class="navbar-item" href="viewGrade.html">
+                  View grade
                 </a>
                 <span class="navbar-item">
-                  <a class="button is-white is-outlined is-small" href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html">
-                    <span class="icon">
-                      <i class="fa fa-github"></i>
-                    </span>
-                    <span>View Source</span>
+                  <a class="button is-white is-outlined is-small" href="index.html">
+                    <span>Logout</span>
                   </a>
                 </span>
               </div>
@@ -54,58 +52,182 @@
 <br>
 
 
-<section class="container">
+     <section class="container">
+		 <h1 class="title is-1">All course</h1>
+       <div class="field has-addons">
+       <div class="control">
+         <input class="input" type="text" placeholder="Find a repository">
+       </div>
+       <div class="control">
+         <a class="button is-info" href="searchResult.html">
+           Search
+         </a>
+       </div>
+     </div>
 
-       <table class="table is-hoverable is-bordered">
-  <thead>
-    <tr>
-      <th><abbr title="Position">Pos</abbr></th>
-      <th>Team</th>
-      <th><abbr title="Played">Pld</abbr></th>
-      <th><abbr title="Won">W</abbr></th>
-      <th><abbr title="Drawn">D</abbr></th>
-      <th><abbr title="Lost">L</abbr></th>
-      <th><abbr title="Goals for">GF</abbr></th>
-      <th><abbr title="Goals against">GA</abbr></th>
-      <th><abbr title="Goal difference">GD</abbr></th>
-      <th><abbr title="Points">Pts</abbr></th>
-      <th>Qualification or relegation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-      </td>
-      <td>38</td>
-      <td>23</td>
-      <td>12</td>
-      <td>3</td>
-      <td>68</td>
-      <td>36</td>
-      <td>+32</td>
-      <td>81</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
-    </tr>
+     <table class="table is-bordered is-hoverable">
+<thead>
+  <tr>
+    <th><abbr title="Position">NO.</abbr></th>
+    <th><abbr title="Course ID">Couse ID</abbr></th>
+    <th><abbr title="Title">Title</abbr></th>
+    <th><abbr title="Section">Section</abbr></th>
+    <th><abbr title="Credit">Credit</abbr></th>
+    <th><abbr title="Day">Day</abbr></th>
+    <th><abbr title="Time">Time</abbr></th>
+    <th><abbr title="Room">Room</abbr></th>
+    <th>Descriptions</th>
+    <th>Enroll</th>
 
-  </tbody>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <th>1</th>
+    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="204100">204100</a> <strong></strong>
+    </td>
+    <td>IT and Modern Life</td>
+    <td>701</td>
+    <td>3</td>
+    <td>Tu</td>
+    <td>12.30-14.30</td>
+    <td>CSB202</td>
+    <td>Computers in everyday life, Data processing and information management, Office automation software for modern life and Internet and webpage construction.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+
+  </tr>
+  <tr>
+    <th>2</th>
+    <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="953201">953201</a></td>
+    <td>Algo design & Analysis</td>
+    <td>701</td>
+    <td>3</td>
+    <td>MTh</td>
+    <td>13.00-14.30</td>
+    <td>CAMT113</td>
+    <td>Designing efficient algorithm. Evaluating algorithm performance. Effectiveness of classes of algorithms. Design and use of recursive algorithms. </td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>3</th>
+    <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="953323">953323</td>
+    <td>Software cons test & Maint</td>
+    <td>701</td>
+    <td>3</td>
+    <td>Tu</td>
+    <td>9.30-12.30</td>
+    <td>CAMT114</td>
+    <td>Introduction to software construction. Implementation language.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="953323">953392</td>
+    <td>Software engineering preproject</td>
+    <td>000</td>
+    <td>1</td>
+    <td>Mo</td>
+    <td>8.00-9.00</td>
+    <td>CAMT218</td>
+    <td>Prepare begin to start the project.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>5</th>
+    <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="953422">953422</a></td>
+    <td>Software Quakity</td>
+    <td>701</td>
+    <td>3</td>
+    <td>Fr</td>
+    <td>9.30-12.30</td>
+    <td>CAMT114</td>
+    <td>Introduction to quality assurance. Code of ethics. Software quality factors.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>6</th>
+    <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="953494">953494</a></td>
+    <td>Selected Topic in SE 1</td>
+    <td>701</td>
+    <td>3</td>
+    <td>TBA</td>
+    <td>0.00-0.00</td>
+    <td>TBA</td>
+    <td> Intensive study of current interesting topics and new development in various fields of software engineering.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>7</th>
+    <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="953495">953495</a></td>
+    <td>Selected Topic in SE 2</td>
+    <td>701</td>
+    <td>3</td>
+    <td>Tu</td>
+    <td>14.30-17.30</td>
+    <td>CAMT316</td>
+    <td>Intensive study of current interesting topics and new development in various fields of software engineering.</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="953701">953701</a></td>
+    <td>Intro SW Development</td>
+    <td>001</td>
+    <td>3</td>
+    <td>th</td>
+    <td>9.00-12.00</td>
+    <td>CAMT215</td>
+    <td>Software engineer body of knowledge (SWEBOK) </td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+
+  <tr>
+    <th>9</th>
+    <td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="953702">953702</a></td>
+    <td>Intro SW Process MGMT</td>
+    <td>001</td>
+    <td>3</td>
+    <td>We</td>
+    <td>9.00-12.00</td>
+    <td>CAMT215</td>
+    <td> Software engineer body of knowledge (SWEBOK), introduction to software process management</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+  <tr>
+    <th>10</th>
+    <td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="c">953743</a></td>
+    <td>SE for business Apps</td>
+    <td>801</td>
+    <td>3</td>
+    <td>SaSu</td>
+    <td>9.00-16.00</td>
+    <td>TBA</td>
+    <td>-</td>
+    <td><a class="button is-danger is-focused">Add</a></td>
+  </tr>
+
+</tbody>
 </table>
 
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <a class="pagination-previous ">Previous</a>
+  <a class="pagination-next">Next page</a>
+  <ul class="pagination-list">
+    <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+  </ul>
+</nav>
+
+
+
    </section>
-
    <br>
-
-   <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-  </div>
-</footer>
 
 
 
