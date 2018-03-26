@@ -38,7 +38,7 @@
                   View grade
                 </a>
                 <span class="navbar-item">
-                  <a class="button is-white is-outlined is-small" href="../login_student.html">
+                  <a class="button is-white is-outlined is-small" href="../login.html">
                     <span>Logout</span>
                   </a>
                 </span>
@@ -56,12 +56,13 @@
 		 <h1 class="title is-2">All course</h1>
        <div class="field has-addons">
        <div class="control">
-         <input class="input" type="text" placeholder="Find a repository">
+         <input id="search-box" class="input" type="text" placeholder="Find a repository">
        </div>
        <div class="control">
-         <a class="button is-info" href="searchResult.html">
+         <a class="button is-info" onClick="searchBox()">
            Search
          </a>
+		   <p id ="search_message" class="help is-danger is-size-5"></p>
        </div>
      </div>
 
@@ -224,14 +225,26 @@
   </ul>
 </nav>
 
-
-
    </section>
    <br>
+	
+<p>Click the button to display an alert box.</p>
 
 
 
-
-
+<script>
+	var input , error_message , null_message;
+	error_message = "NOT FOUND";
+	null_message = "Please type some keyword to search";
+	input = document.getElementById("search-box");
+	
+function searchBox() {
+    if(input != null){
+		window.location.href = "searchResult.html";
+	} else {
+		document.getElementById("search_message").innerHTML = null_message;
+	}
+}
+</script>
   </body>
 </html>
