@@ -18,4 +18,33 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://myweb.cmu.ac.th/tasanai_p/admin/editCourse.html')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input'), '111111')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_1'), 'TEST')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_2'), '701')
+
+WebUI.selectOptionByValue(findTestObject('Page_EDIT COURSE (2)/select_1      2      3      4'), '3', true)
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_3'), 'Tue')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_4'), '09.00-14.00')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_5'), 'CAMT 211')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/input_input_6'), '20')
+
+WebUI.setText(findTestObject('Page_EDIT COURSE (2)/textarea_textarea'), 'TEST TEST')
+
+WebUI.click(findTestObject('Page_EDIT COURSE (2)/input_button is-link'))
+
+WebUI.verifyElementPresent(findTestObject('Page_MAINPAGE  ADMIN CP/div_Course edit is successful'), 0)
+
+WebUI.closeBrowser()
 
