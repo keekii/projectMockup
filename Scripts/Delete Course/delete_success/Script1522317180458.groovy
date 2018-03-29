@@ -18,4 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://myweb.cmu.ac.th/tasanai_p/admin/mainPage_admin.html')
+
+WebUI.click(findTestObject('Page_MAINPAGE  ADMIN CP (1)/a_Delete'))
+
+WebUI.verifyElementPresent(findTestObject('Page_MAINPAGE  ADMIN CP (3)/div_Course delete is successfu'), 0)
+
+WebUI.closeBrowser()
 

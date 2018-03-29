@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>delete_success</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>dbe5b600-3817-458a-aeff-23e4560713ae</testCaseGuid>
+   <testCaseGuid>3fdb957b-2b9b-48f4-9e91-238c43ceac37</testCaseGuid>
 </TestCaseEntity>
