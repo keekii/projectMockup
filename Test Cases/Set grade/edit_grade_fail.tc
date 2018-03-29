@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>edit_grade_fail</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e43d5b13-3561-4694-87b1-9a1c94133656</testCaseGuid>
+   <testCaseGuid>be67f228-4fcf-4c94-ae55-34f9b1e68afe</testCaseGuid>
 </TestCaseEntity>

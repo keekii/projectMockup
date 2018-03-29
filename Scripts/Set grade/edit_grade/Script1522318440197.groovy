@@ -18,4 +18,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://myweb.cmu.ac.th/tasanai_p/teacher/mainPage_teacher.html')
+
+WebUI.click(findTestObject('Page_MAINPAGE  TEACHER CP (2)/a_Edit'))
+
+WebUI.click(findTestObject('Page_GIVING GRADE SYSTEM (1)/input_button is-link'))
+
+WebUI.verifyElementNotPresent(findTestObject('Page_MAINPAGE  TEACHER CP (3)/div_Grade edit is successful'), 0)
+
+WebUI.closeBrowser()
 
